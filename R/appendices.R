@@ -94,7 +94,7 @@ insert_source <- function(repo_spec, name, collection = "posts",
                           text = "source code") {
   path <- paste(
     host, repo_spec, "tree", branch, paste0("_", collection),
-    name, "index.Rmd", sep = "/"
+    name, "index.qmd", sep = "/"
   )
   return(markdown_link(text, path))
 }

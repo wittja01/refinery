@@ -31,7 +31,7 @@ use_article_template <- function(
   post <- specify_post(name, collection)
 
   post_dir <- full_post_path(post)
-  post_file <- fs::path(post_dir, "index.Rmd")
+  post_file <- fs::path(post_dir, "index.qmd")
 
   # create post folder
   fs::dir_create(post_dir)
